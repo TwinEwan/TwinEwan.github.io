@@ -22,17 +22,22 @@ overflow: hidden;
 }
 
 p a { color: #FFFFFF }
+
 h2 a { 
 color: #FFFFFF;
-padding: 5px;
 }
 
-video { padding: 5px;
+h3 { padding: 5px; }
+h2 { padding: 5px; }
+h1 { padding: 5px; }
+
+video {
+display:block;
 margin:auto;
 }
 
 ul {
-width:515px;
+width:520px;
 margin:auto;
 padding: 0;
 list-style:none;
@@ -42,6 +47,7 @@ overflow:hidden;
 li {
 float:left;
 border-right: 1px solid var(--pageColour);
+border-left: 1px solid var(--pageColour);
 background-color: var(--bgColour)
 }
 
@@ -62,11 +68,7 @@ background-color: #535486;
 text-decoration: none;
 }
 
-section {
-background-color: var(--bgColour);
-padding: 2px;
-margin-top:3px;
-}
+
 
 footer {
 background-color: var(--bgColour);
@@ -75,6 +77,10 @@ margin-top: 1;
 font-size: 9px;
 }
 
+div {
+background-color: var(--bgColour);
+margin-top:3px;
+}
 
 .half,{
   float: left;
