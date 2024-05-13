@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dean Walks</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+	<script>
+	function displaywalk1() {
+	document.getElementById("walk1").style.display="block";
+	document.getElementById("walk2").style.display="none";
+	document.getElementById("walk3").style.display="none" }
+	
+	function displaywalk2() {
+	document.getElementById("walk1").style.display="none";
+	document.getElementById("walk2").style.display="block";
+	document.getElementById("walk3").style.display="none" }
+	
+	function displaywalk3() {
+	document.getElementById("walk1").style.display="none";
+	document.getElementById("walk2").style.display="none";
+	document.getElementById("walk3").style.display="block" }
+	</script>
+</head>
+
+<body>
+
+<header>
+<img class="imageBanner" src="../images/WFWbanner.png">
+</header>
+
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="dean.html">Dean</a></li>
+<li><a href="devilla.html">Devilla</a></li>
+<li><a href="balgownie.html">Balgownie</a></li>
+<li><a href="tours.html">Tours</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+</ul>
+</nav>
+
+<main>
+<h1>Dean Wood</h1>
+<p>Dean wood is owned and maintained by the Forestry Commission.  It has one forestry road running through the middle of the wood.  The road makes for an easy walk but the better walks are to found skirting the outer edge of the wood.  Areas of the woodland were harvested in 2018 creating open sunny spaces.  A small burn runs through the middle of the wood from North to South.  This has created a pleasant valley walk.</p>
+<p>Begin each walk at the forestry gate on Lundin Road, where there is room for four cars to park.</p>
+     
+
+<h3 onmouseover="displaywalk1()">Walk 1</h3>
+<h3 onmouseover="displaywalk2()">Walk 2</h3>
+<h3 onmouseover="displaywalk3()">Walk 3</h3>
+
+<br>
+
+<section id="walk1" style="display:none">
+	<h2>Walk 1: 3 miles</h2>
+	<p> This walk includes a bit of everything: steep hills, woodland, open ground and even a bit of grass land.  Proper walking boots are recommended as it's easy to turn your ankle on one of the many tree roots that are found on the paths.</p>
+	<img class="mapLarge" src="../images/DeanWalk1.png">
+</section>
+
+<section id="walk2" style="display:none">
+	<h2>Walk 2: 1.75 miles</h2>
+	<p>A walk of two halves.  The forestry road is an easy stroll with open views of the surrounding area and its wildlife.  The other half of the walk takes you through woodland down into the valley and across the burn.  The burn is very shallow but will still require waterproof shoes.</p>
+	<img class="mapLarge" src="../images/DeanWalk2.png">
+</section>
+
+<section id="walk3" style="display:none">
+	<h2>Walk 3: 2.5 miles</h2>
+	<p>Dean wood drops around 50m from East to West meaning this is a good walk for those looking for exercise.  The route is a simple there and back down the forestry road and establish paths.  For an alternative walk, parking for one car is available at the Western edge from where the route may be tackled in the other direction.</p>
+	<img class="mapLarge" src="../images/DeanWalk3.png">
+</section>
+
+</main>
+
+<footer>
+<p>&copy; West Fife Walkers</p>
+</footer>
+
+</body>
+</html>

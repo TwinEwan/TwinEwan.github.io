@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tours</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+</head>
+
+<body>
+
+<header>
+<img class="imageBanner" src="../images/WFWbanner.png">
+</header>
+
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="dean.html">Dean</a></li>
+<li><a href="devilla.html">Devilla</a></li>
+<li><a href="balgownie.html">Balgownie</a></li>
+<li><a href="tours.html">Tours</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+</ul>
+</nav>
+
+<main>
+<section>
+<h2>Tour Guide Booking Form</h2>
+<p>Please complete the form below to apply for places on the summer walks.</p>
+<p>Note that only one form may be submitted per person.  You may bring a maximum of 5 friends with you on each walk.  When the walks have been set up you will be contacted via your email address.</p>    
+</section>
+<div>
+ <form action="">
+
+  First name:<br>
+  <input type="text" name="firstname" size="30" maxlength="30" required>
+  <br>
+  
+  Last name:<br>
+  <input type="text" name="lastname" size="30" maxlength="30" required>
+  <br><br>
+     
+  E-mail address:<br>
+  <input type="text" name="email" size="70" maxlength="70" required>
+  <br><br>   
+  
+  Select the woods you would like to walk in:
+  <select name="wood" multiple>
+    <option value="dean">Dean</option>
+    <option value="balgownie">Balgownie</option>
+    <option value="devilla">Devilla</option>
+  </select>
+  <br><br>
+     
+  Select a month for your walks:<br>
+  <input type="radio" name="month" value="June" checked> June
+  <input type="radio" name="month" value="July"> July
+  <input type="radio" name="month" value="August"> August
+  <input type="radio" name="month" value="September"> September
+  <br><br>
+     
+  Estimate the number of friends joining you (0 to 5):
+  <input type="number" name="walkers" value="0" min="0" max="5">
+  <br><br>
+  
+  <input type="submit" onclick="alert('Form Entered')" value="Submit">
+</form>    
+    
+    </div>
+
+</main>
+
+<footer>
+<p>&copy; West Fife Walkers</p>
+</footer>
+
+</body>
+</html>

@@ -1,83 +1,92 @@
-:root {
---bgColour: #43324D;
---pageColour: #3F2B41;
---highlightColour: #463958;
---textColour: #FFFFFF;
+html {
+    background: #43324d;
+    background-image: linear-gradient(135deg, #412F47 20%, #463958 80%);
+    background-attachment: fixed;
+
+    font-family: Verdana;
+    color:white;
 }
 
-body {
-width:1000px;
-margin:auto;
-background-color: var(--pageColour);
-color: #FFFFFF;
-font-family: Verdana;
-font-size: 12px 
-}
-
+/* Navigation Bars Styling */
 main {
-background-color: var(--bgColour) 
-margin: 2px;
-padding: 3px;
-overflow: hidden;
+    margin-left: 170px;
 }
 
-p a { color: #FFFFFF }
-
-h2 a { 
-color: #FFFFFF;
+.navbar {
+    position: fixed;
+    width: 150px;
+    margin: 10px;
+    padding: 0px;
 }
 
-h3 { padding: 5px; }
-h2 { padding-left: 5px; padding-top: 5px;}
-h1 { padding: 5px; }
-
-ul {
-width:520px;
-margin:auto;
-padding: 0;
-list-style:none;
-overflow:hidden;
+.contents {
+    position: fixed;
+    width: 150px;
+    margin: 10px;
+    margin-top: 270px;
+    padding: 0px;
 }
 
-li {
-float:left;
-border-right: 1px solid var(--pageColour);
-border-left: 1px solid var(--pageColour);
-background-color: var(--bgColour)
+.navbar h5, .contents h5 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px;
 }
 
-li a {
-color: #FFFFFF;
-display:block;
-padding: 12px 32px;
-text-align:center;
-text-decoration: underline #FFFFFF; 
+.navbar p {
+    font-size: 9px;
 }
 
-li a:hover:not(.current) {
-background-color: var(--highlightColour);
+.navbar div {
+    margin: 1px;
+    padding: 1px 10px;
+}
+
+.navbar ul, .contents ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar li a {
+    display: block;
+    padding: 8px 16px;
+}
+
+.contents li a {
+    display: block;
+    padding: 4px 16px;
+}
+
+.navbar li a:hover:not(.current), .contents li a:hover {
+    background-color: #43324D;
 }
 
 .current {
-background-color: #535486;
-text-decoration: none;
-}
-
-
-
-footer {
-background-color: var(--bgColour);
-padding: 5px;
-margin-top: 1;
-font-size: 9px;
+    background-color: #463958;
 }
 
 div {
-background-color: var(--bgColour);
-margin-top:3px;
+    box-shadow: 2px 2px #39273B;
+    background: #3F2B41;
+    padding: 10px;
+    margin: 10px;
 }
 
-.half,{
-  float: left;
-  width: 50%;
+div div {
+    box-shadow: 0 0;
+}
+
+h1, h3, h4, h5 {
+    text-decoration: underline;
+    margin: 2px;
+}
+
+h2 {
+    margin: 2px;
+}
+
+a, p {
+    color: white;
 }

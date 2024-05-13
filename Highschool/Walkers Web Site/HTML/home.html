@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+<script>
+function displayPhoto1A(my_image) 
+{my_image.src ='../images/devillaSwan.jpeg';}
+function displayPhoto1B(my_image) 
+{my_image.src ='../images/balgownieView.jpeg';}
+
+function displayPhoto2A(my_image) 
+{my_image.src ='../images/deanGate.jpeg';}
+function displayPhoto2B(my_image) 
+{my_image.src ='../images/DeanSunset.jpeg';}
+
+</script>    
+    
+</head>
+
+<body>
+
+<header>
+<img class="imageBanner" src="../images/WFWbanner.png">
+</header>
+
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="dean.html">Dean</a></li>
+<li><a href="devilla.html">Devilla</a></li>
+<li><a href="balgownie.html">Balgownie</a></li>
+<li><a href="tours.html">Tours</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+</ul>
+</nav>
+
+<main>
+<div>
+
+</div>
+
+
+<section id="topLeft">
+    <img class="mapSmall" src="../images/DeanOriginal.png">
+    <h1>Dean</h1>
+    <p>Dean wood is located one mile North of the village of Crossford, just outside Dunfermline.  A small wood 1.0 by 0.4  miles in size it's suitable for short (but hilly) walks on natural paths.</p>
+</section>
+
+<section id="topRight">
+    <img class="mapSmall" src="../images/DevillaOriginal.png">
+    <h1>Devilla</h1>
+    <p>Devilla is located one mile East of Kincardine and has ample parking off the A985.  A larger wood, 2.2 by 1.6 miles, Devilla has many forestry roads, connecting paths and bodies of water to explore.</p>
+</section>
+    
+<section id="bottom">
+    <img class="mapSmall" src="../images/BalgownieOriginal.png">
+    <h1>Balgownie</h1>
+    <p>Balgownie is located North West of the small village of Torryburn.  A small wood 1.1 by 0.3 miles in size it's suitable for short walks on forestry roads and locally maintained paths.</p>
+</section>
+    
+<section> 
+<p>Hover your mouse over the photographs to see more from West Fife Walks.<br><br>
+<img class="homePhoto" src="../images/devillaSwan.jpeg" onmouseover="displayPhoto1A(this)" onmouseout="displayPhoto1B(this)">
+<img class="homePhoto" src="../images/deanGate.jpeg" onmouseover="displayPhoto2A(this)" onmouseout="displayPhoto2B(this)"> 
+    
+</section>
+    
+</main>
+
+<footer>
+<p>&copy; West Fife Walkers</p>
+</footer>
+
+</body>
+</html>
