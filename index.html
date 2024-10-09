@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | New Unity Project</title>
+    <title>Unity WebGL Player | Gyro Web Test</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">New Unity Project</div>
+        <div id="unity-build-title">Gyro Web Test</div>
       </div>
     </div>
     <script>
@@ -57,15 +57,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/aou.loader.js";
+      var loaderUrl = buildUrl + "/web.loader.js";
       var config = {
-        dataUrl: buildUrl + "/aou.data",
-        frameworkUrl: buildUrl + "/aou.framework.js",
-        codeUrl: buildUrl + "/aou.wasm",
+        dataUrl: buildUrl + "/web.data.gz",
+        frameworkUrl: buildUrl + "/web.framework.js.gz",
+        codeUrl: buildUrl + "/web.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "New Unity Project",
-        productVersion: "1.0",
+        productName: "Gyro Web Test",
+        productVersion: "0.1",
         showBanner: unityShowBanner,
       };
 
